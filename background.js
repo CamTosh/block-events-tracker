@@ -1,6 +1,6 @@
 let tracker = "*://canvas.supinfo.com/api/v1/courses/*/quizzes/*/submissions/*/events"
 
-chrome.webRequest.onBeforeRequest.addListener(
+window[typeof chrome !== "undefined" ? 'chrome' : 'browser'].webRequest.onBeforeRequest.addListener(
 	(request) => {
 		console.log('Block:' + request.url)
 
