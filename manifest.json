@@ -4,21 +4,11 @@
   "name": "supinfaux",
   "version": "1.0",
   "permissions": [
-    "*://canvas.supinfo.com/api/v1/courses/*/quizzes/*/submissions/*/events",
+    "https://canvas.supinfo.com/api/v1/courses/*/quizzes/*/submissions/*/events",
     "activeTab",
     "webRequest",
     "webRequestBlocking"
   ],
-  "browser_action": {
-    "default_popup": "popup.html",
-    "content_scripts": [
-      {
-        "js": [
-          "popup.js"
-        ]
-      }
-    ]
-  },
   "background": {
     "scripts": [
       "background.js"
